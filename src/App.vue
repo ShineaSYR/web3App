@@ -1,11 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Web3Api from './components/Web3Api.vue'
 // import Web3 from 'web3'
-import { Web3 } from 'web3';
-
-const web3 = new Web3();
-// const web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
-console.log('web3', web3)
 </script>
 
 <template>
@@ -17,7 +12,7 @@ console.log('web3', web3)
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
+  <Web3Api />
 </template>
 
 <style scoped>
