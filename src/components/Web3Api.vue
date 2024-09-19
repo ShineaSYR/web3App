@@ -21,15 +21,21 @@ const privateKey = ref('')
 
 
 // // 获取余额
-const amount = ref(-1)
-web3.eth.getBalance(address.value).then((res)=>{
-    amount.value = res
-    console.log('amount', amount.value)
-})
+// const amount = ref(-1)
+// web3.eth.getBalance(address.value).then((res)=>{
+//     amount.value = res
+//     console.log('amount', amount.value)
+// })
 
 // 单位转换
 const num1 = web3.utils.toWei('0.3')
 console.log('num1', num1)
+// Web3 和 实例
+const num2 = Web3.utils.toWei('0.3')
+console.log('num2', num2)
+// 单位转换
+const num3 = web3.utils.fromWei('300000000', 'ether')
+console.log('num3', num3)
 
 </script>
 
